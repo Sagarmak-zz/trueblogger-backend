@@ -7,6 +7,7 @@ const api = require('./api');
 
 // Configuration
 const { port } = require('./config');
+const { nodeEnv } = require('./config');
 const HOST = "localhost";
 
 // logs out whatever happens
