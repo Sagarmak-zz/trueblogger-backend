@@ -2,18 +2,20 @@ const express = require('express');
 const app = express();
 const logger = require('morgan');
 const cors = require('cors');
-const axios = require('axios');
 
 const api = require('./api');
 
 // Configuration
-const { baseUrl } = require('./config');
 const { port } = require('./config');
 const HOST = "localhost";
 
 // logs out whatever happens
 app.use(logger('dev'));
 app.use(cors());
+
+app.get('/', (req, res) => {
+  res.send('Welcome to TrueBlogger Backend App!');
+});
 
 app.use('/posts/:postID/related', async function (req, res, next) {
   try {
