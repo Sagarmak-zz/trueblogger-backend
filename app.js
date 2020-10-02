@@ -7,7 +7,6 @@ const api = require('./api');
 
 // Configuration
 const { port } = require('./config');
-const { nodeEnv } = require('./config');
 const HOST = "localhost";
 
 // logs out whatever happens
@@ -60,7 +59,7 @@ app.use('/posts', async function (req, res, next) {
     data = response.data;
     res.status(200).json(data);
   } catch (error) {
-    const errorResponse = error && error.response && error.response;
+    const errorResponse = error && error.response;
     const errorStatus = errorResponse.status;
     const errorData = errorResponse.data;
     res.status(errorStatus).send(errorData);
