@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const logger = require('morgan');
 const cors = require('cors');
 
 const api = require('./api');
@@ -9,8 +8,6 @@ const api = require('./api');
 const { port } = require('./config');
 const HOST = "localhost";
 
-// logs out whatever happens
-app.use(logger('dev'));
 app.use(cors());
 
 app.get('/', (req, res) => {
