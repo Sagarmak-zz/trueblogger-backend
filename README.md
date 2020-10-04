@@ -12,11 +12,11 @@
 ## Folder Structure
 
     ├── src
-	  ├── api.js     # api file wrapper
-	  ├── app.js     # the node app
-	  ├── config.js  # getter for .env variables
-	  ├── http.js    # axios lib instance
-	  ├── .env.example
+    ├── api.js     # api file wrapper
+    ├── app.js     # the node app
+    ├── config.js  # getter for .env variables
+    ├── http.js    # axios lib instance
+    ├── .env.example
     ├── .gitignore
     ├── package.json
     └── README.md
