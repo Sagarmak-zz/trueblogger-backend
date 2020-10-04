@@ -41,9 +41,10 @@ NODE_APP_TITLE=trueblogger
 # public api for wordpress' truecaller blog
 NODE_APP_API_URL=http://dev-api:port/api/v1/etc
 NODE_APP_PORT=3000
+```
 
 ### Dependencies
-```
+
 |Package |Description|
 |--------|-------|
 |axios|promise based HTTP library|
