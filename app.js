@@ -60,11 +60,9 @@ app.use('/categories', async function (req, res, next) {
   try {
     // const response = await axios.get(`${baseUrl}/categories`);
     const response = await api.categories();
-    console.log("response", response);
     data = response.data;
     res.status(200).json(data);
   } catch (error) {
-    console.log("error", error);
     const errorResponse = error && error.response && error.response;
     const errorStatus = errorResponse.status;
     const errorData = errorResponse.data;
